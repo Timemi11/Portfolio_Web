@@ -1,0 +1,42 @@
+nav{
+    display: flex;
+    justify-content: space-between; 
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+nav h1{
+    padding: 1rem 2rem;
+    font-size: 22px
+}
+ul li{
+    position: relative;
+    list-style-type: none;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    transition: all 500ms;
+}
+ul li:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+}
+ul li::after{
+    position: absolute;
+    right: 50%;
+    bottom: 10px;
+    transform: translateX(50%);
+    content: "";
+    width: 5%;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    transition: width 500ms;
+}
+ul li:hover::after{
+    width: 70%;
+}
+
+
+
