@@ -4,8 +4,9 @@ import "./Hero.css";
 
 export default function Hero() {
   return (
-    <section>
+    <section id="Hero" className="snap-child">
       <div className="introduction">
+        <h1>Hello , My Name is</h1>
         <h1>Chatchawan Aromtip</h1>
         <p>
           I'm interested to be
