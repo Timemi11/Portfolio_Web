@@ -28,13 +28,15 @@ const Contact = () => {
       })
       .catch((err) => console.log(err));
 
+    alert("Form Subbmitted");
     console.log("Form submitted:", formData);
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
     <div id="Contact" className="snap-child">
       <h2>Contact Me</h2>
-      <form onSubmit={handleSubmit}>
+      <form id="contact-form" onSubmit={handleSubmit}>
         <label htmlFor="name">Name:</label>
         <input
           style={{ resize: "none", height: "2rem", fontSize: "20px" }}
